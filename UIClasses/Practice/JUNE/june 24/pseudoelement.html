@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstrating pseudo element</title>
+
+<style>
+p::first-letter{
+    font-size: 25px;
+    color:green;
+    font-weight: bold;
+}
+
+p::first-line{
+    background: yellowgreen;
+}
+
+p::{
+    content:"continue reading----";
+    color:blue;
+    text-decoration: underline;
+}
+
+</style>
+</head>
+<body>
+   <h3> news item 1</h3> 
+   <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus distinctio assumenda earum ratione, doloribus quod. </p>
+
+   <h3> news item 2</h3>
+   <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem laborum, a voluptas suscipit odio dolorem.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi nostrum mollitia quisquam odit iste repudiandae.</p>
+  
+    <h3> news item 3</h3>
+    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid modi sunt culpa animi adipisci aperiam a iure quaerat laborum magni error officiis, amet nemo veritatis beatae autem illum, commodi.</p>
+
+</body>
+</html>
